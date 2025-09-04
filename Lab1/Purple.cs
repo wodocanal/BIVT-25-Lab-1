@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Purple
     {
@@ -7,6 +7,11 @@
             bool answer = false;
 
             // code here
+            int a1 = Convert.ToInt32(c == 0 && b == 0 && a == 0);
+            int a2 = Convert.ToInt32(c < 0 && b < 0 && a < 0);
+            int a3 = Convert.ToInt32(c > 0 && b > 0 && a > 0);
+
+            answer = Convert.ToBoolean(Math.Max(Math.Max(a1, a2), a3));
 
             // end
 
