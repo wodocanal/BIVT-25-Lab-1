@@ -41,11 +41,11 @@ namespace Lab1
 
             // code here
 
-            if (Math.Pow(a, 2) == b || Math.Pow(a, 3) == b)
+            if (a*a == b || a*a*a == b)
             {
                 answer = true;
             }
-            if (Math.Pow(b, 2) == a || Math.Pow(b, 3) == a)
+            if (b*b == a || b*b*b == a)
             {
                 answer = true;
             }            
@@ -58,7 +58,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            answer = Math.Pow(f, 2) - 4 * d * g;
+            answer = f*f - 4 * d * g;
             // end
 
             return answer;
